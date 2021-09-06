@@ -9,9 +9,40 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Nightly Tasks")
-        Text("Weekly Tasks")
-        Text("Monthly Tasks")
+        VStack {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("Nightly Tasks")
+                        .underline()
+                        .font(/*@START_MENU_TOKEN@*/.title3/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.heavy)
+                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                        .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
+                    Text("Check all windows")
+                    Text("Check all doors")
+                    Text("Check that the safe is locked")
+                    Text("Check the Mailbox")
+                    Text("Inspect security cameras")
+                    Text("Clear ice from sidewalks")
+                    Text("Document \"strange and unusual\" occurrences")
+                    Text("Weekly Tasks")
+                        .underline()
+                        .font(/*@START_MENU_TOKEN@*/.title3/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.heavy)
+                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                        .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
+                    Text("Monthly Tasks")
+                        .underline()
+                        .font(/*@START_MENU_TOKEN@*/.title3/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.heavy)
+                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                        .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
+                }
+                .foregroundColor(.gray)
+                Spacer()
+            }
+            Spacer()
+        }
     }
 }
 
